@@ -5,8 +5,8 @@ import cv2
 import numpy as np
 from scipy import ndimage
 
-video_capture = cv2.VideoCapture("male.mp4")
-glasses = cv2.imread("images/sunglasses.png", -1)
+video_capture = cv2.VideoCapture(0)
+glasses = cv2.imread("specs.png", -1)
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
